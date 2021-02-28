@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: $global_font;
+  color: $article_color;
+  background-color: $bg_color;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  .social-icon {
+    width: 24px;
+    height: 24px;
+    fill: #ccc;
+    margin-left: 15px;
+    &:hover {
+      fill: $green_color;
+    }
+  }
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1;
+  font-family: $title_font;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: $title_font;
+  font-style: italic;
+  font-weight: 300;
+  margin-top: 4px;
+}
+
+.burger__menu {
+  width: 30px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  display: none;
+  margin-top: 15px;
+  margin-left: 5px;
+  div {
+    width: 100%;
+    height: 2px;
+    background-color: $gray_color;
+  }
+  @media (max-width: 821px) {
+    display: flex;
+  }
+}
+
+.btn {
+  background-color: $green_color;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: $white_color;
+  font-family: $global_font;
+  font-weight: 700;
+  padding: 21px 32px;
+  &:hover {
+    background: $gray_color;
+  }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  width: 100%;
+  &__item {
+    font-size: 16px;
+    font-family: $global_font;
+    font-weight: 400;
+    color: $title_color;
+    width: 56px;
+    height: 56px;
+    margin: 0 4px;
+    background: $white_color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    &--empty {
+      width: auto;
+      background: transparent;
+    }
+    &--active {
+      background: $green_color;
+      color: $white_color;
+    }
+  }
+  &-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  @media (max-width: 540px) {
+    justify-content: center;
+    &__item {
+      font-size: 12px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.disabled {
+  fill: #ccc;
+}
+
+hr {
+  border-color: $subtitle_color;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}

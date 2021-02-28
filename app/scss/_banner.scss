@@ -1,0 +1,49 @@
+.banner {
+  padding: 70px 0;
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 800px) {
+      flex-direction: column-reverse;
+    }
+  }
+  &__facebook-wrapper {
+    width: 360px;
+    height: 260px;
+    background: $white_color;
+    margin-right: 30px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 380px) {
+      width: 290px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+  &__ad-wrapper {
+    height: 260px;
+    flex: 1 1 auto;
+    background: $white_color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 800px) {
+      margin-bottom: 25px;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 1;
+    font-family: $title_font;
+    font-weight: 600;
+    font-style: italic;
+    color: $title_color;
+  }
+  &__img {
+    height: 150px;
+    width: auto;
+  }
+}

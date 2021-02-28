@@ -1,0 +1,23 @@
+.build {
+  width: auto;
+  min-height: 560px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 435px;
+  &__buttons {
+    display: flex;
+    p {
+      background: $white_color;
+      width: 212px;
+      padding: 19px;
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 450px) {
+    padding-top: 400px;
+    &__buttons {
+      display: block;
+    }
+  }
+}

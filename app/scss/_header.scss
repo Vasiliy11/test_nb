@@ -1,0 +1,114 @@
+.header {
+  background: $white_color;
+  &__top {
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+  }
+  &__nav {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        padding: 25px 0;
+        a {
+          text-transform: uppercase;
+          font-family: $global_font;
+          line-height: 1.5;
+          font-weight: 700;
+          color: $subtitle_color;
+          &:hover,
+          &.active {
+            color: $green_color;
+          }
+        }
+      }
+    }
+    @media (max-width: 820px) {
+      position: relative;
+      margin-bottom: 15px;
+      ul {
+        display: block;
+        position: absolute;
+        top: 35px;
+        left: -130%;
+        background: $white_color;
+        z-index: 5;
+        width: calc(100% + 30px);
+        margin: 0 -15px;
+        li {
+          display: block;
+          padding: 5px 15px;
+        }
+      }
+    }
+  }
+  &__slider {
+    height: 580px;
+  }
+}
+
+ul.active__menu {
+  left: 0 !important;
+}
+
+.slider {
+  &__track {
+    height: 100%;
+  }
+  &__list {
+    height: 100%;
+  }
+  &__item {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding-top: 80px;
+    &-info {
+      max-width: 552px;
+      background: rgba(255, 255, 255, 0.949);
+      padding: 45px 40px 50px;
+    }
+    @media (max-width: 620px) {
+      padding-top: 200px;
+      &-info {
+        width: 85%;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+.item-info {
+  &__title {
+    font-size: 60px;
+    line-height: 1;
+    font-family: $title_font;
+    font-weight: 700;
+    color: $gray_color;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: $global_font;
+    font-weight: 400;
+    color: $gray_color;
+    margin-top: 24px;
+  }
+  @media (max-width: 620px) {
+    &__title {
+      font-size: 42px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 16px;
+    }
+  }
+}
+
+ul.splide__pagination {
+  left: calc(50% - 510px);
+  bottom: 78px;
+}

@@ -12,6 +12,7 @@
   }
   &-bottom {
     padding: 16px 0;
+    border-top: 1px solid $subtitle_color;
   }
   &__title {
     @media (max-width: 540px) {

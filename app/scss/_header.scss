@@ -4,6 +4,7 @@
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
+    border-bottom: 1px solid $article_color;
   }
   &__nav {
     ul {
@@ -15,7 +16,7 @@
           text-transform: uppercase;
           font-family: $global_font;
           line-height: 1.5;
-          font-weight: 700;
+          font-weight: 400;
           color: $subtitle_color;
           &:hover,
           &.active {

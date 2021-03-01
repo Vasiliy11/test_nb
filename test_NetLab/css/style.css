@@ -67,7 +67,8 @@ a .social-icon:hover {
   cursor: pointer;
   display: none;
   margin-top: 15px;
-  margin-left: 5px;
+  margin-right: 5px;
+  margin-left: auto;
 }
 
 .burger__menu div {
@@ -147,6 +148,7 @@ hr {
   min-height: 150px;
   text-align: center;
   padding-top: 40px;
+  border-bottom: 1px solid #737373;
 }
 
 .header__nav ul {
@@ -162,7 +164,7 @@ hr {
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
   line-height: 1.5;
-  font-weight: 700;
+  font-weight: 400;
   color: #595959;
 }
 
@@ -289,11 +291,12 @@ ul.splide__pagination {
   font-weight: 600;
   font-style: italic;
   color: #262626;
-  margin-top: 15px;
+  margin-top: 13px;
 }
 
 .article__title--sm {
-  margin-top: 7px;
+  margin-top: 8px;
+  font-size: 24px;
 }
 
 .article__text {
@@ -314,7 +317,7 @@ ul.splide__pagination {
 }
 
 .article__buttons {
-  margin-top: 25px;
+  margin-top: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -360,7 +363,16 @@ ul.splide__pagination {
 }
 
 .article__btn {
-  padding: 20px 50px;
+  padding: 20px 47px 20px 50px;
+  margin-left: 25px;
+  width: 160px;
+}
+
+.article__btn-icon {
+  height: 21px;
+  width: 20px;
+  fill: #fff;
+  margin-bottom: -5px;
 }
 
 .build {
@@ -440,6 +452,7 @@ ul.splide__pagination {
 
 .footer-bottom {
   padding: 16px 0;
+  border-top: 1px solid #595959;
 }
 
 .footer__subtitle {
@@ -492,6 +505,10 @@ ul.splide__pagination {
 }
 
 @media (max-width: 1140px) {
+  .pagination {
+    justify-content: center;
+  }
+
   .articles__column {
     max-width: 100%;
     width: 100%;
@@ -502,7 +519,9 @@ ul.splide__pagination {
   }
 
   .article__btn {
-    margin-bottom: 30px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 30px;
   }
 }
 
@@ -606,10 +625,6 @@ ul.splide__pagination {
 }
 
 @media (max-width: 540px) {
-  .pagination {
-    justify-content: center;
-  }
-
   .pagination__item {
     font-size: 12px;
     width: 40px;
@@ -652,7 +667,12 @@ ul.splide__pagination {
   }
 
   .build__buttons {
-    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .build__buttons p {
+    margin-bottom: 10px;
   }
 }
 

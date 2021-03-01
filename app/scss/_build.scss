@@ -17,7 +17,11 @@
   @media (max-width: 450px) {
     padding-top: 400px;
     &__buttons {
-      display: block;
+      flex-direction: column;
+      align-items: center;
+      p{
+        margin-bottom: 10px;
+      }
     }
   }
 }

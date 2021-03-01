@@ -72,9 +72,10 @@
     font-weight: 600;
     font-style: italic;
     color: $title_color;
-    margin-top: 15px;
+    margin-top: 13px;
     &--sm {
-      margin-top: 7px;
+      margin-top: 8px;
+      font-size: 24px;
     }
   }
   &__text {
@@ -93,7 +94,7 @@
     -webkit-line-clamp: 3;
   }
   &__buttons {
-    margin-top: 25px;
+    margin-top: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -138,9 +139,19 @@
     }
   }
   &__btn {
-    padding: 20px 50px;
+    padding: 20px 47px 20px 50px;
+    margin-left: 25px;
+    width: 160px;
+    &-icon{
+      height: 21px;
+      width: 20px;
+      fill: $white_color;
+      margin-bottom: -5px;
+    }
     @media (max-width: 1140px) {
-      margin-bottom: 30px;
+      display: block;
+      text-align: center;
+      margin: 0 auto 30px;
     }
   }
 }
